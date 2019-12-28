@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Withcer</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #content{
+        width: 100%;
+        height: 890px;
+    }
+    #menu{
+        width: 300px;
+        left: 150px;
+        position: fixed;
+        z-index: 900;
+    }
+    #menu_button{
+        width: 250px;
+        left: 176px;
+        top: 240px;
+        position: fixed;
+        z-index: 901;
+    }
+    #menu_button ul{
+        list-style: none;
+    }
+    #menu_button ul li{
+        text-align: center;
+        cursor: pointer;
+    }
+    #menu_button ul li a{
+        height: 43px;
+        line-height: 43px;
+        margin-bottom: 7px;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    img{
+        vertical-align: top;
+    }
+    .b{
+        padding: 10px;
+    }
+    #bgi1,#bgi2,#bgi3,#bgi4,#bgi5,#bgi6,#pride{
+        position: relative;
+    }
+    #text1 a{
+        width: 35%;
+        right: 250px;
+        top: 40px;
+        text-indent: 2em;
+        position: absolute;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 18px;
+        background-color: #000;
+    }
+    #text2 a{
+        width: 30%;
+        left: 500px;
+        top: 150px;
+        text-indent: 2em;
+        position: absolute;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 18px;
+        background-color: #000;
+    }
+    #text3 a{
+        width: 30%;
+        right: 50px;
+        top: 150px;
+        text-indent: 2em;
+        position: absolute;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 18px;
+        background-color: #000;
+    }
+    #text4 a{
+        width: 30%;
+        right: 50px;
+        top: 100px;
+        text-indent: 2em;
+        position: absolute;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 18px;
+        background-color: #000;
+    }
+    #text5 a{
+        width: 25%;
+        right: 50px;
+        top: 150px;
+        text-indent: 2em;
+        position: absolute;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 18px;
+        background-color: #000;
+    }
+    #bgi6 video{
+        position: absolute;
+        right: 50px;
+        bottom: 200px;
+    }
+    #nav{
+        width: 100%;
+        height: 43px;
+        top: 0px;
+        position: sticky;
+        background-color: #000;
+        z-index: 899;
+    }
+    #nav ul{
+        float: right;
+        background-color: #000;
+        list-style: none;
+    }
+    #nav ul li{
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        width: 100px;
+    }
+    #nav ul li a{
+        height: 43px;
+        line-height: 43px;
+        margin-left: 5px;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #nav1{
+        width: 100%;
+        height: 43px;
+        top: 0px;
+        position: sticky;
+        background-color: #000;
+        z-index: 899;
+    }
+    #nav1 ul{
+        float: right;
+        background-color: #000;
+        list-style: none;
+    }
+    #nav1 ul li{
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        width: 30px;
+    }
+    #nav1 ul li a{
+        height: 43px;
+        line-height: 43px;
+        margin-left: 5px;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 20px;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    #p_text{
+        width: 40%;
+        right: 50px;
+        top: 150px;
+        text-indent: 2em;
+        position: absolute;
+        font-family: 华文仿宋;
+        color: #5e5242;
+        font-size: 18px;
+        background-color: #000;
+    }
+    #mp3{
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        z-index: 902;
+    }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id='menu'><img src="images/menu.png"></div>
+        <div id="menu_button">
+            <ul>
+                <li><a href="#bgi"></a></li>
+                <li><a href="#bgi1"></a></li>
+                <li><a href="#bgi2"></a></li>
+                <li><a href="#image1"></a></li>
+                <li><a href="#pride"></a></li>
+                <li><a href="#bgi6"></a></li>
+            </ul>
+        </div>
+        <div id="bgi">
+            <img src="images/thumbnail-tw.jpg" width="100%">
+        </div>
+        <div id="bgi1">
+            <img src="images/527776.png" width="100%">
+            <div id="text1"><a class="b"></a></div>
+        </div>
+        <div id="intro">
+            <div id="nav">
+                <ul>
+                    <li><a href="#bgi2"></a></li>
+                    <li><a href="#bgi3"></a></li>
+                    <li><a href="#bgi4"></a></li>
+                    <li><a href="#bgi5"></a></li>
+                </ul>
+            </div>
+            <div id="bgi2">
+                <img src="images/136159-cool-witcher-3-background-1920x1080.jpg" width="100%">
+                <div id="text2"><a class="b"></a></div>
+            </div>
+            <div id="bgi3">
+                <img src="images/ciri-in-the-witcher-3.jpg" width="100%">
+                <div id="text3"><a class="b"></a></div>
+            </div>
+            <div id="bgi4">
+                <img src="images/OyTItx.jpg" width="100%">
+                <div id="text4"><a class="b"></a></div>
+            </div>
+            <div id="bgi5">
+                <img src="images/The_Witcher_3_Wild_Hunt_Artwork_6.jpg" width="100%">
+                <div id="text5"><a class="b"></a></div>
+            </div>
+        </div>
+        <div id="view">
+            <div id="nav1">
+                <ul>
+                    <li><a href="#image1">1</a></li>
+                    <li><a href="#image2">2</a></li>
+                    <li><a href="#image3">3</a></li>
+                    <li><a href="#image4">4</a></li>
+                    <li><a href="#image5">5</a></li>
+                    <li><a href="#image6">6</a></li>
+                    <li><a href="#image7">7</a></li>
+                    <li><a href="#image8">8</a></li> 
+                    <li><a href="#image9">9</a></li>
+                    <li><a href="#image10">10</a></li>                                       
+                </ul>
+            </div>
+            <div id="image1"><img src="images/527773.png" width="100%"></div>
+            <div id="image2"><img src="images/maxresdefault.jpg" width="100%"></div>
+            <div id="image3"><img src="images/mountain-snow-winter-art.jpg" width="100%"></div>
+            <div id="image4"><img src="images/overqualified-for-all-these.png" width="100%"></div>
+            <div id="image5"><img src="images/2559202.png" width="100%"></div>
+            <div id="image6"><img src="images/3472795-1451090738.jpg" width="100%"></div>
+            <div id="image7"><img src="images/TW3_Jun102014_02.jpg" width="100%"></div>
+            <div id="image8"><img src="images/The Witcher 3 Wild Hunt 5.jpg" width="100%"></div>
+            <div id="image9"><img src="images/Witcher3-4.jpg" width="100%"></div>
+            <div id="image10"><img src="images/889864.jpg" width="100%"></div>
+        </div>
+        <div id="pride">
+            <img src="images/the-game-awards-2018-ps4-playstation-round-up-1.original.jpg" width="100%">
+            <div id="p_text"><a class="b">《巫师3：狂猎》在2013和2014年E3上获预发行奖，并在这两年被评为IGN最佳E3奖中的最佳角色扮演游戏。游戏荣
+                获2013和2014年IGN的E3人民选择奖，2014年GameSpot的E3人民选择奖，第31和第32届金摇杆奖最受欢迎奖，以及在拉斯维加斯举办的2014年游戏
+                大奖最受期待游戏。发行后，游戏获得了250多个“年度游戏”的荣誉，是当时获奖最多的游戏。截至2016年8月，CD Projekt表示《巫师3》自发行以
+                来已获得了800多个奖项。
+                    游戏荣获多个颁奖活动的奖项，包括金摇杆奖、游戏大奖、D.I.C.E.奖、游戏开发者选择奖、西南偏南游戏奖和NAVGTR奖。《巫师3》被IGN、
+                    GameSpot、Game Informer和其他多个游戏媒体评为年度游戏，并获得金摇杆奖的最佳叙事、最佳视觉设计和最佳游戏时刻类别以及游戏大奖的
+                    最佳角色扮演游戏，CD Projekt RED亦获得年度工作室称号。游戏还获得D.I.C.E.奖的游戏设计杰出成就、技术杰出成就、故事杰出成就荣誉
+                    ，并在第16届年度游戏开发者选择奖中获得年度最佳游戏和最佳技术奖。</a></div>
+        </div>
+        <div id="bgi6">
+            <img src="images/the-witcher-3-wild-hunt-witches-wallpaper.jpg" width="100%">
+            <video src="video/the_witcher_3_1080p.mp4" width='50%' controls></video>
+        </div>
+        <audio id="mp3" src="music/theme_witcher_3_wild.mp3" autoplay controls loop></audio>
+    </div>
+    <script>
+    var menu_li = document.querySelector('#menu_button');
+    var lis = menu_li.querySelectorAll('li');
+    for (var i=0;i<lis.length;i++){
+        lis[i].onmouseover = function(){
+            for(var i=0;i<lis.length;i++){
+                lis[i].style.backgroundImage = '';
+            }
+            this.style.backgroundImage = 'url(images/menu-selected.jpg)';
+        }
+    }
+    </script>
+</body>
+</html>
